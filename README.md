@@ -67,6 +67,16 @@ Switch(config)# banner motd #
 Switch(config)# copy running-config startup-config
 ```
 
+11) List all the IP interfaces or physical port and VLAN in the switch :
+- *This command show the type (Fast Ethernet, Gigabit Ethernet, VLAN), IP address, status and protocol of the interface*
+```bash
+Switch# show ip interface brief
+```
+OR
+```bash
+Switch# sh ip int brief
+```
+
 
 ## Router Configuration
 1) Enter privilege mode :
@@ -133,6 +143,16 @@ Router(config)# banner motd #
 - *This command save the running configuration to the startup file on non-volatile random access memory (NVRAM).*
 ```bash
 Router(config)# copy running-config startup-config
+```
+
+11) List all the IP interfaces or physical port of the router :
+- *This command show the type (Fast Ethernet, Gigabit Ethernet, Subinterface, VLAN), IP address, status and protocol of the interface*
+```bash
+Router# show ip interface brief
+```
+OR
+```bash
+Router# sh ip int brief
 ```
 
 ## Reference :
