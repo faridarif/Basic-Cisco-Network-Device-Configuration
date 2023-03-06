@@ -77,6 +77,15 @@ OR
 Switch# sh ip int brief
 ```
 
+12) Enter the interface configuration mode for the specific interface port, assign an IP address to that interface port and brings up the interface :
+- *This command shows the example of assigning an IP address to the interface FastEthernet 0/1*
+- *"no shutdown" command will brings the interface "up", while the "shutdown" command will shuts down the interface and the status of the interface will be "down"*
+```bash
+Switch(config)# int FastEthernet 0/1
+Switch(config-if)# ip address <ip-address> <subnet-mask>
+Switch(config-if)# no shutdown
+```
+
 
 ## Router Configuration
 1) Enter privilege mode :
@@ -154,6 +163,16 @@ OR
 ```bash
 Router# sh ip int brief
 ```
+
+12) Enter the interface configuration mode for the specific interface port and assign an IP address to that interface port :
+- *This command shows the example of assigning an IP address to the interface FastEthernet 0/1*
+- *"no shutdown" command will brings the interface "up", while the "shutdown" command will shuts down the interface and the status of the interface will be "down"*
+```bash
+Router(config)# int FastEthernet 0/1
+Router(config-if)# ip address <ip-address> <subnet-mask>
+Router(config-if)# no shutdown
+```
+
 
 ## Reference :
 - https://www.netwrix.com/cisco_commands_cheat_sheet.html
